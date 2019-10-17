@@ -1,0 +1,56 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ValidationUtilities.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DseOutputPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\DSE_XMLSampling</Value>
+    </Setting>
+    <Setting Name="XMLSamplingInputPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\DSE_Validated_for_XMLSampling</Value>
+    </Setting>
+    <Setting Name="DseOutputBackup" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\DSE_XMLSampling_Backup</Value>
+    </Setting>
+    <Setting Name="XMLSamplingInputBackup" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\DSE_Validated_for_XMLSampling_Backup</Value>
+    </Setting>
+    <Setting Name="noReplyEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EMAIL ADDRESS FOR AUTO GENERATED EMAILS</Value>
+    </Setting>
+    <Setting Name="emailServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EMAIL SERVER</Value>
+    </Setting>
+    <Setting Name="errorReportEmailList" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;LIST&lt;/string&gt;
+  &lt;string&gt;OF&lt;/string&gt;
+  &lt;string&gt;EMAIL&lt;/string&gt;
+  &lt;string&gt;ADDRESSES&lt;/string&gt;
+  &lt;string&gt;TO&lt;/string&gt;
+  &lt;string&gt;SEND&lt;/string&gt;
+  &lt;string&gt;ERROR&lt;/string&gt;
+  &lt;string&gt;REPORTS&lt;/string&gt;
+  &lt;string&gt;TO&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="adminEmails" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ADDRESSES&lt;/string&gt;
+  &lt;string&gt;TO&lt;/string&gt;
+  &lt;string&gt;SEND&lt;/string&gt;
+  &lt;string&gt;MIGRATION&lt;/string&gt;
+  &lt;string&gt;RESULTS&lt;/string&gt;
+  &lt;string&gt;EMAILS&lt;/string&gt;
+  &lt;string&gt;TO&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="logfile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.\\cmdpValidationUtilitiesLog.txt</Value>
+    </Setting>
+    <Setting Name="cmdpEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WE HAVE A DEDICATED INBOX FOR CMDP CORRESPONDENCE THAT GETS COPIES OF EMAIL SENT TO LABS</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

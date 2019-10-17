@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrateValidateDseData", "MigrateValidateDseData\MigrateValidateDseData.csproj", "{E028DE4E-143E-4F16-91EF-665E24928259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmdpErrorReviewer", "CmdpErrorReviewer\CmdpErrorReviewer.csproj", "{24795080-9B5A-4A64-87DE-FF87A8573BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationDataAccess", "ValidationDataAccess\ValidationDataAccess.csproj", "{E9A96EFC-2ABE-46E7-BA93-B9271BB832BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationUtilities", "ValidationUtilities\ValidationUtilities.csproj", "{571363DF-B2F9-429F-99F9-4565D0015E5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompileForXmlSampling", "CompileForXmlSampling\CompileForXmlSampling.csproj", "{C6E89AD5-9091-439E-ABBE-C44A0BD0D30C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckXmlSamplingRejections", "CheckXmlSamplingRejections\CheckXmlSamplingRejections.csproj", "{C21C2EB0-ED48-4E99-B04C-0C4F1F2D0C5D}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E028DE4E-143E-4F16-91EF-665E24928259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E028DE4E-143E-4F16-91EF-665E24928259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E028DE4E-143E-4F16-91EF-665E24928259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E028DE4E-143E-4F16-91EF-665E24928259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24795080-9B5A-4A64-87DE-FF87A8573BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24795080-9B5A-4A64-87DE-FF87A8573BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24795080-9B5A-4A64-87DE-FF87A8573BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24795080-9B5A-4A64-87DE-FF87A8573BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A96EFC-2ABE-46E7-BA93-B9271BB832BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A96EFC-2ABE-46E7-BA93-B9271BB832BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A96EFC-2ABE-46E7-BA93-B9271BB832BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A96EFC-2ABE-46E7-BA93-B9271BB832BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571363DF-B2F9-429F-99F9-4565D0015E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571363DF-B2F9-429F-99F9-4565D0015E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571363DF-B2F9-429F-99F9-4565D0015E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571363DF-B2F9-429F-99F9-4565D0015E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E89AD5-9091-439E-ABBE-C44A0BD0D30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E89AD5-9091-439E-ABBE-C44A0BD0D30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E89AD5-9091-439E-ABBE-C44A0BD0D30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E89AD5-9091-439E-ABBE-C44A0BD0D30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C21C2EB0-ED48-4E99-B04C-0C4F1F2D0C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C21C2EB0-ED48-4E99-B04C-0C4F1F2D0C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C21C2EB0-ED48-4E99-B04C-0C4F1F2D0C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C21C2EB0-ED48-4E99-B04C-0C4F1F2D0C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
