@@ -12,7 +12,7 @@ namespace ValidationDataAccess.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,49 +20,6 @@ namespace ValidationDataAccess.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;U" +
-            "ser ID=sdwis_user;Password=9Ln3c@nlza")]
-        public string SdwisDbConnectionString {
-            get {
-                return ((string)(this["SdwisDbConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza")]
-        public string SdwisAddOnConnectionString {
-            get {
-                return ((string)(this["SdwisAddOnConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;User " +
-            "ID=sdwis_user;Password=9Ln3c@nlza")]
-        public string SdwisDbProd {
-            get {
-                return ((string)(this["SdwisDbProd"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza" +
-            "")]
-        public string SdwisAddOnProd {
-            get {
-                return ((string)(this["SdwisAddOnProd"]));
             }
         }
         
@@ -81,6 +38,50 @@ namespace ValidationDataAccess.Properties {
         public string UserDomain {
             get {
                 return ((string)(this["UserDomain"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;P" +
+            "assword=9Ln3c@nlza")]
+        public string SdwisAddOnConnectionString {
+            get {
+                return ((string)(this["SdwisAddOnConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;P" +
+            "assword=9Ln3c@nlza")]
+        public string SdwisAddOnProd {
+            get {
+                return ((string)(this["SdwisAddOnProd"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Inf" +
+            "o=True;User ID=sdwis_user;Password=9Ln3c@nlza")]
+        public string SdwisDbConnectionString {
+            get {
+                return ((string)(this["SdwisDbConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Inf" +
+            "o=True;User ID=sdwis_user;Password=9Ln3c@nlza")]
+        public string SdwisDbProd {
+            get {
+                return ((string)(this["SdwisDbProd"]));
             }
         }
     }

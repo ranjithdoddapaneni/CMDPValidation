@@ -15,7 +15,7 @@ namespace CmdpErrorReviewer
 
         public DataValidationErrors()
         {
-            InitializeComponent();
+            InitializeComponent(); 
             if(!DbHelper.IsProductionInstance())
             {
                 this.Text += "***TEST***";

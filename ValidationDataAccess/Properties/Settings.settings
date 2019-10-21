@@ -2,43 +2,43 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ValidationDataAccess.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="SdwisDbConnectionString" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=TESTDBSERVER;Initial Catalog=TESTSDWISDB;Persist Security Info=True;User ID=USERID;Password=PASSWORD&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=TESTDBSERVER;Initial Catalog=TESTSDWISDB;Persist Security Info=True;User ID=USERID;Password=PASSWORD</Value>
-    </Setting>
-    <Setting Name="SdwisAddOnConnectionString" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=TESTDBSERVER;Initial Catalog=TESTADDONDB;User ID=USERID;Password=PASSWORD&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=TESTDBSERVER;Initial Catalog=TESTADDONDB;User ID=USERID;Password=PASSWORD</Value>
-    </Setting>
-    <Setting Name="SdwisDbProd" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=PRODDBSERVER;Initial Catalog=SDWISDB;Persist Security Info=True;User ID=USERID;Password=PASSWORD&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=PRODDBSERVER;Initial Catalog=SDWISDB;Persist Security Info=True;User ID=USERID;Password=PASSWORD</Value>
-    </Setting>
-    <Setting Name="SdwisAddOnProd" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=PRODDBSERVER;Initial Catalog=ADDONDB;User ID=USERID;Password=PASSWORD&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=PRODDBSERVER;Initial Catalog=ADDONDB;User ID=USERID;Password=PASSWORD</Value>
-    </Setting>
     <Setting Name="UseProductionSettings" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="UserDomain" Type="System.String" Scope="Application">
       <Value Profile="(Default)">DEC</Value>
+    </Setting>
+    <Setting Name="SdwisAddOnConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza</Value>
+    </Setting>
+    <Setting Name="SdwisAddOnProd" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza</Value>
+    </Setting>
+    <Setting Name="SdwisDbConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;User ID=sdwis_user;Password=9Ln3c@nlza&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;User ID=sdwis_user;Password=9Ln3c@nlza</Value>
+    </Setting>
+    <Setting Name="SdwisDbProd" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;User ID=sdwis_user;Password=9Ln3c@nlza&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;User ID=sdwis_user;Password=9Ln3c@nlza</Value>
     </Setting>
   </Settings>
 </SettingsFile>

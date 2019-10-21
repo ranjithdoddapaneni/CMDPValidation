@@ -55,6 +55,9 @@
   <ItemGroup>
     <Compile Include="DbHelper.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\dsSdwis.cs">
+      <DependentUpon>dsSdwis.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Models\dsSdwis.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

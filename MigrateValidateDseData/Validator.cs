@@ -126,11 +126,11 @@ namespace MigrateValidateDseData
                         s.AddError("Required field: Sampling location identifier is missing", true);
                         rejectSamplesSS.Add(s.LabSampleIdentifier);
                     }
-                    if (!s.IsCompositeSample && string.IsNullOrWhiteSpace(s.SampleLocationCollectionAddress))
-                    {
-                        s.AddError("Required field: Sample collection location is missing", true);
-                        rejectSamplesSS.Add(s.LabSampleIdentifier);
-                    }
+                    //if (!s.IsCompositeSample && string.IsNullOrWhiteSpace(s.SampleLocationCollectionAddress))
+                    //{
+                    //    s.AddError("Required field: Sample collection location is missing", true);
+                    //    rejectSamplesSS.Add(s.LabSampleIdentifier);
+                    //}
                     if (s.LabSampleIdentifier.Length > 20)
                     {
                         s.AddError("Invalid data: Lab sample ID is too long. Maximum allowed length: 20 characters", true);
@@ -417,20 +417,7 @@ namespace MigrateValidateDseData
 
         private static bool IsSampleTooOld(string pwsid, DateTime CollectionDate, DateTime AnalysisDate)
         {
-            long longAllowedSampleAge = DbHelper.getAllowedSampleAge(pwsid) * 60;
-            long longSampleAge = 1000000; //set it to something very old
-
-            try
-            {
-                TimeSpan ts = AnalysisDate - CollectionDate;
-                longSampleAge = (ts.Days * 24 * 60) + ts.Hours * 60 + ts.Minutes;
-            }
-            catch
-            {
-                throw;
-            }
-
-            return longSampleAge > longAllowedSampleAge;
+            return false;
         }
     }
 }
