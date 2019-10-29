@@ -76,7 +76,7 @@ namespace ValidationDataAccess
             string email = string.Empty;
             foreach(DataRow r in SdwisDataset.TINLGCOM.Rows)
             {
-                email += r["ELECTRONIC_ADDRESS"] + ";";
+                email += !string.IsNullOrEmpty(email) ? r["ELECTRONIC_ADDRESS"] + ";" : r["ELECTRONIC_ADDRESS"];
             }
             return email;
         }

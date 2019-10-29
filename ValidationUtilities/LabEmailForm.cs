@@ -13,7 +13,7 @@ namespace ValidationUtilities
         {
             InitializeComponent();
             emailSent = false;
-            string subject = string.Format("DEC Drinking Water Sample Validation Error for {0}{1}", s.LabSampleIdentifier, s is Result ? ", " + ((Result)s).AnalyteCode : "");
+            string subject = string.Format("SC Drinking Water Sample Validation Error for {0}{1}", s.LabSampleIdentifier, s is Result ? ", " + ((Result)s).AnalyteCode : "");
             FillForm(s.LabAccredidationIdentifier, subject, WriteMessage(s));
         }
 
@@ -26,7 +26,7 @@ namespace ValidationUtilities
                 result = "Result ";
                 analyteCode = string.Format("Analyte: {0}\r\n", ((Result)s).AnalyteCode);
             }
-            string message = string.Format("DEC Drinking Water Sample {0}Validation Error\r\n" +
+            string message = string.Format("SC Drinking Water Sample {0}Validation Error\r\n" +
                                             "PWSID: {1}\r\n" +
                                             "PWS Name: {2}\r\n" +
                                             "Sample Job Id: {3}\r\n" +
@@ -66,6 +66,11 @@ namespace ValidationUtilities
                 return;
             }
             this.Close();
+        }
+
+        private void EmailBody_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

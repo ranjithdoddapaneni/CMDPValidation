@@ -11,18 +11,18 @@
     <Setting Name="SdwisAddOnConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password=DSE_MATRIX@2019!&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza</Value>
+      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password=DSE_MATRIX@2019!</Value>
     </Setting>
     <Setting Name="SdwisAddOnProd" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password=DSE_MATRIX@2019!&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;User ID=sdwis_user;Password=9Ln3c@nlza</Value>
+      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password=DSE_MATRIX@2019!</Value>
     </Setting>
     <Setting Name="SdwisDbConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;

@@ -49,14 +49,18 @@ namespace ValidationUtilities
         {
             try
             {
+
                 MailMessage mess = new MailMessage();
                 mess.From = new MailAddress(from);
-                to = to.Replace(';',',');
-                to = to.Trim(',');
-                mess.To.Add(to);
+                foreach (var s in to.Split(';'))
+                {
+                    mess.To.Add(s);
+                }
+
+
                 if (!string.IsNullOrWhiteSpace(cc))
                 {
-                    cc = cc.Replace(';',',');
+                    cc = cc.Replace(';', ',');
                     cc = cc.Trim(',');
                     mess.CC.Add(cc);
                 }
@@ -64,12 +68,13 @@ namespace ValidationUtilities
                 mess.Body = body;
                 ServerCheck(ref mess);
                 SmtpClient emailSender = new SmtpClient(sEmailServer);
+                emailSender.Port = 25;
                 emailSender.Send(mess);
             }
             catch(Exception e)
             {
                 SendErrorMessage("Error in Mailer.SendMessage", e);
-                return false;
+                //return false;
             }
             return true;
         }

@@ -18,7 +18,7 @@
       <Value Profile="(Default)">.\\cmdpValidationUtilitiesLog.txt</Value>
     </Setting>
     <Setting Name="cmdpEmail" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">WE HAVE A DEDICATED INBOX FOR CMDP CORRESPONDENCE THAT GETS COPIES OF EMAIL SENT TO LABS</Value>
+      <Value Profile="(Default)">sdwis@dhec.sc.gov</Value>
     </Setting>
     <Setting Name="noReplyEmail" Type="System.String" Scope="Application">
       <Value Profile="(Default)">noreply@dhec.sc.gov</Value>

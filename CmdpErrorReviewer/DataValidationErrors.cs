@@ -182,7 +182,7 @@ namespace CmdpErrorReviewer
                 email = new LabEmailForm(sample);
                 email.ShowDialog(this);
             }
-            catch(Exception)
+            catch(Exception ex)
             {
                 if (email != null)
                     email.Close();

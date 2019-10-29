@@ -126,7 +126,7 @@ AND(lc.END_DATE &gt;= @ANALYSIS_DATE OR lc.END_DATE is null)</CommandText>
   <xs:element name="dsSdwis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsSdwis" msprop:Generator_UserDSName="dsSdwis">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="TINLGCOM" msprop:Generator_TableClassName="TINLGCOMDataTable" msprop:Generator_TableVarName="tableTINLGCOM" msprop:Generator_TablePropName="TINLGCOM" msprop:Generator_RowDeletingName="TINLGCOMRowDeleting" msprop:Generator_RowChangingName="TINLGCOMRowChanging" msprop:Generator_RowEvHandlerName="TINLGCOMRowChangeEventHandler" msprop:Generator_RowDeletedName="TINLGCOMRowDeleted" msprop:Generator_UserTableName="TINLGCOM" msprop:Generator_RowChangedName="TINLGCOMRowChanged" msprop:Generator_RowEvArgName="TINLGCOMRowChangeEvent" msprop:Generator_RowClassName="TINLGCOMRow">
+        <xs:element name="TINLGCOM" msprop:Generator_TableClassName="TINLGCOMDataTable" msprop:Generator_TableVarName="tableTINLGCOM" msprop:Generator_RowChangedName="TINLGCOMRowChanged" msprop:Generator_TablePropName="TINLGCOM" msprop:Generator_RowDeletingName="TINLGCOMRowDeleting" msprop:Generator_RowChangingName="TINLGCOMRowChanging" msprop:Generator_RowEvHandlerName="TINLGCOMRowChangeEventHandler" msprop:Generator_RowDeletedName="TINLGCOMRowDeleted" msprop:Generator_RowClassName="TINLGCOMRow" msprop:Generator_UserTableName="TINLGCOM" msprop:Generator_RowEvArgName="TINLGCOMRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ELECTRONIC_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnELECTRONIC_ADDRESS" msprop:Generator_ColumnPropNameInRow="ELECTRONIC_ADDRESS" msprop:Generator_ColumnPropNameInTable="ELECTRONIC_ADDRESSColumn" msprop:Generator_UserColumnName="ELECTRONIC_ADDRESS" minOccurs="0">
@@ -139,7 +139,7 @@ AND(lc.END_DATE &gt;= @ANALYSIS_DATE OR lc.END_DATE is null)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="MIGRATION_ERROR_REPORT" msprop:Generator_TableClassName="MIGRATION_ERROR_REPORTDataTable" msprop:Generator_TableVarName="tableMIGRATION_ERROR_REPORT" msprop:Generator_TablePropName="MIGRATION_ERROR_REPORT" msprop:Generator_RowDeletingName="MIGRATION_ERROR_REPORTRowDeleting" msprop:Generator_RowChangingName="MIGRATION_ERROR_REPORTRowChanging" msprop:Generator_RowEvHandlerName="MIGRATION_ERROR_REPORTRowChangeEventHandler" msprop:Generator_RowDeletedName="MIGRATION_ERROR_REPORTRowDeleted" msprop:Generator_UserTableName="MIGRATION_ERROR_REPORT" msprop:Generator_RowChangedName="MIGRATION_ERROR_REPORTRowChanged" msprop:Generator_RowEvArgName="MIGRATION_ERROR_REPORTRowChangeEvent" msprop:Generator_RowClassName="MIGRATION_ERROR_REPORTRow">
+        <xs:element name="MIGRATION_ERROR_REPORT" msprop:Generator_TableClassName="MIGRATION_ERROR_REPORTDataTable" msprop:Generator_TableVarName="tableMIGRATION_ERROR_REPORT" msprop:Generator_RowChangedName="MIGRATION_ERROR_REPORTRowChanged" msprop:Generator_TablePropName="MIGRATION_ERROR_REPORT" msprop:Generator_RowDeletingName="MIGRATION_ERROR_REPORTRowDeleting" msprop:Generator_RowChangingName="MIGRATION_ERROR_REPORTRowChanging" msprop:Generator_RowEvHandlerName="MIGRATION_ERROR_REPORTRowChangeEventHandler" msprop:Generator_RowDeletedName="MIGRATION_ERROR_REPORTRowDeleted" msprop:Generator_RowClassName="MIGRATION_ERROR_REPORTRow" msprop:Generator_UserTableName="MIGRATION_ERROR_REPORT" msprop:Generator_RowEvArgName="MIGRATION_ERROR_REPORTRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="job_number" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnjob_number" msprop:Generator_ColumnPropNameInRow="job_number" msprop:Generator_ColumnPropNameInTable="job_numberColumn" msprop:Generator_UserColumnName="job_number" type="xs:decimal" minOccurs="0" />
@@ -235,7 +235,7 @@ AND(lc.END_DATE &gt;= @ANALYSIS_DATE OR lc.END_DATE is null)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="USERINFO" msprop:Generator_TableClassName="USERINFODataTable" msprop:Generator_TableVarName="tableUSERINFO" msprop:Generator_TablePropName="USERINFO" msprop:Generator_RowDeletingName="USERINFORowDeleting" msprop:Generator_RowChangingName="USERINFORowChanging" msprop:Generator_RowEvHandlerName="USERINFORowChangeEventHandler" msprop:Generator_RowDeletedName="USERINFORowDeleted" msprop:Generator_UserTableName="USERINFO" msprop:Generator_RowChangedName="USERINFORowChanged" msprop:Generator_RowEvArgName="USERINFORowChangeEvent" msprop:Generator_RowClassName="USERINFORow">
+        <xs:element name="USERINFO" msprop:Generator_TableClassName="USERINFODataTable" msprop:Generator_TableVarName="tableUSERINFO" msprop:Generator_RowChangedName="USERINFORowChanged" msprop:Generator_TablePropName="USERINFO" msprop:Generator_RowDeletingName="USERINFORowDeleting" msprop:Generator_RowChangingName="USERINFORowChanging" msprop:Generator_RowEvHandlerName="USERINFORowChangeEventHandler" msprop:Generator_RowDeletedName="USERINFORowDeleted" msprop:Generator_RowClassName="USERINFORow" msprop:Generator_UserTableName="USERINFO" msprop:Generator_RowEvArgName="USERINFORowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EMAIL" msprop:Generator_ColumnVarNameInTable="columnEMAIL" msprop:Generator_ColumnPropNameInRow="EMAIL" msprop:Generator_ColumnPropNameInTable="EMAILColumn" msprop:Generator_UserColumnName="EMAIL" minOccurs="0">
@@ -248,14 +248,26 @@ AND(lc.END_DATE &gt;= @ANALYSIS_DATE OR lc.END_DATE is null)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CERTIFICATION_CHECK" msprop:Generator_TableClassName="CERTIFICATION_CHECKDataTable" msprop:Generator_TableVarName="tableCERTIFICATION_CHECK" msprop:Generator_RowChangedName="CERTIFICATION_CHECKRowChanged" msprop:Generator_TablePropName="CERTIFICATION_CHECK" msprop:Generator_RowDeletingName="CERTIFICATION_CHECKRowDeleting" msprop:Generator_RowChangingName="CERTIFICATION_CHECKRowChanging" msprop:Generator_RowEvHandlerName="CERTIFICATION_CHECKRowChangeEventHandler" msprop:Generator_RowDeletedName="CERTIFICATION_CHECKRowDeleted" msprop:Generator_RowClassName="CERTIFICATION_CHECKRow" msprop:Generator_UserTableName="CERTIFICATION_CHECK" msprop:Generator_RowEvArgName="CERTIFICATION_CHECKRowChangeEvent">
+        <xs:element name="CERTIFICATION_CHECK" msprop:Generator_TableClassName="CERTIFICATION_CHECKDataTable" msprop:Generator_TableVarName="tableCERTIFICATION_CHECK" msprop:Generator_TablePropName="CERTIFICATION_CHECK" msprop:Generator_RowDeletingName="CERTIFICATION_CHECKRowDeleting" msprop:Generator_RowChangingName="CERTIFICATION_CHECKRowChanging" msprop:Generator_RowEvHandlerName="CERTIFICATION_CHECKRowChangeEventHandler" msprop:Generator_RowDeletedName="CERTIFICATION_CHECKRowDeleted" msprop:Generator_UserTableName="CERTIFICATION_CHECK" msprop:Generator_RowChangedName="CERTIFICATION_CHECKRowChanged" msprop:Generator_RowEvArgName="CERTIFICATION_CHECKRowChangeEvent" msprop:Generator_RowClassName="CERTIFICATION_CHECKRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CERT_COUNT" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCERT_COUNT" msprop:Generator_ColumnPropNameInRow="CERT_COUNT" msprop:Generator_ColumnPropNameInTable="CERT_COUNTColumn" msprop:Generator_UserColumnName="CERT_COUNT" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="UserInfo" msprop:Generator_TableClassName="UserInfoDataTable" msprop:Generator_TableVarName="tableUserInfo" msprop:Generator_TablePropName="UserInfo" msprop:Generator_RowDeletingName="UserInfoRowDeleting" msprop:Generator_RowChangingName="UserInfoRowChanging" msprop:Generator_RowEvHandlerName="UserInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="UserInfoRowDeleted" msprop:Generator_UserTableName="UserInfo" msprop:Generator_RowChangedName="UserInfoRowChanged" msprop:Generator_RowEvArgName="UserInfoRowChangeEvent" msprop:Generator_RowClassName="UserInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:string" minOccurs="0" />
+              <xs:element name="EMAIL" msprop:Generator_ColumnVarNameInTable="columnEMAIL" msprop:Generator_ColumnPropNameInRow="EMAIL" msprop:Generator_ColumnPropNameInTable="EMAILColumn" msprop:Generator_UserColumnName="EMAIL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="UserInfoKey1">
+      <xs:selector xpath=".//mstns:UserInfo" />
+      <xs:field xpath="mstns:UserId" />
+    </xs:unique>
   </xs:element>
 </xs:schema>

@@ -26,7 +26,7 @@ namespace MigrateValidateDseData
          * 1)	Make sure TSALAMA (lab is certified for the Analysis method code used to analyze the analyte)  is in SDWIS
          * 2)	TCR Monitoring Period Association exists
          * 3)	RT/TR  TCR Schedule exist for the pws
-         */        
+         */
 
         //TODO This method was for early debug purposes and can be deleted when ready
         /*public static string CheckFile(string filePath)
@@ -67,7 +67,7 @@ namespace MigrateValidateDseData
 
         public static string ValidateAllNewFiles()
         {
-            if(!DbHelper.CheckConnections())
+            if (!DbHelper.CheckConnections())
             {
                 return "Database connection failed: migration aborted.";
             }
@@ -107,6 +107,7 @@ namespace MigrateValidateDseData
                         s.AddError("Required field: Sample collection date is missing", true);
                         rejectSamplesSS.Add(s.LabSampleIdentifier);
                     }
+
                     if (!s.HasCollectionTime)
                     {
                         s.AddError("Required field: Sample collection time is missing", true);
@@ -116,21 +117,22 @@ namespace MigrateValidateDseData
                     {
                         s.AddError("Required field: Sample collector name is missing");
                     }*/
-                    if (!s.IsCompositeSample && !s.HasLabReceiptDate)
-                    {
-                        s.AddError("Required field: Lab receipt date is missing", true);
-                        rejectSamplesSS.Add(s.LabSampleIdentifier);
-                    }
+
+                    //if (!s.IsCompositeSample && !s.HasLabReceiptDate)
+                    //{
+                    //    s.AddError("Required field: Lab receipt date is missing", true);
+                    //    rejectSamplesSS.Add(s.LabSampleIdentifier);
+                    //}
                     if (string.IsNullOrWhiteSpace(s.SampleLocationIdentifier))
                     {
                         s.AddError("Required field: Sampling location identifier is missing", true);
                         rejectSamplesSS.Add(s.LabSampleIdentifier);
                     }
-                    //if (!s.IsCompositeSample && string.IsNullOrWhiteSpace(s.SampleLocationCollectionAddress))
-                    //{
-                    //    s.AddError("Required field: Sample collection location is missing", true);
-                    //    rejectSamplesSS.Add(s.LabSampleIdentifier);
-                    //}
+                    if (!s.IsCompositeSample && string.IsNullOrWhiteSpace(s.SampleLocationCollectionAddress))
+                    {
+                        s.AddError("Required field: Sample collection location is missing", true);
+                        rejectSamplesSS.Add(s.LabSampleIdentifier);
+                    }
                     if (s.LabSampleIdentifier.Length > 20)
                     {
                         s.AddError("Invalid data: Lab sample ID is too long. Maximum allowed length: 20 characters", true);
@@ -166,7 +168,7 @@ namespace MigrateValidateDseData
                     }
                     s.SetDataValidation();
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     Mailer m = new Mailer();
                     m.SendErrorMessage("An error ocurred while validating the following sample:\r\n" + s.ToString(), e, "Exception in MigrateValidateDseData");
@@ -180,7 +182,7 @@ namespace MigrateValidateDseData
                 {
                     sampleId = DbHelper.AddSample(s);
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     Mailer m = new Mailer();
                     m.SendErrorMessage("An error occurred while saving the following sample to the database:\r\n" + s.ToString(), e, "Exception in MigrateValidateDseData");
@@ -198,7 +200,7 @@ namespace MigrateValidateDseData
                             if (r.AnalyteCode.Trim() == "3100")
                             {
                                 s.Has3100 = true;
-                                if(r.MeasurementQualifier == null)
+                                if (r.MeasurementQualifier == null)
                                 {
                                     s.AddError("No measurement qualifier (present/absent) provided for " + r.AnalyteCode, true);
                                     rejectSamplesSS.Add(s.LabSampleIdentifier);
@@ -223,27 +225,27 @@ namespace MigrateValidateDseData
                                 rejectSamplesSS.Add(s.LabSampleIdentifier);
                             }
                         }
-                        if(!r.IsPfosPfoa() && string.IsNullOrWhiteSpace(r.MethodIdentifier))
-                        {
-                            s.AddError("No method code given for Sample Result " + r.AnalyteCode, true);
-                            rejectSamplesSS.Add(s.LabSampleIdentifier);
-                            r.MethodIdentifier = string.Empty;
-                        }
+                        //if(!r.IsPfosPfoa() && string.IsNullOrWhiteSpace(r.MethodIdentifier))
+                        //{
+                        //    s.AddError("No method code given for Sample Result " + r.AnalyteCode, true);
+                        //    rejectSamplesSS.Add(s.LabSampleIdentifier);
+                        //    r.MethodIdentifier = string.Empty;
+                        //}
                         if (r.AnalyteCode == "3014" && r.MethodIdentifier.Trim().ToUpper() == "9223B-QT" && r.MeasurementQualifier.Trim().ToUpper() == "P" && s.StaffValidation == null)
                         {
                             s.AddError("FYI: This E. coli sample analyzed with 9223B-QT will need to have its result manually entered in SDWIS", true);
                             rejectSamplesSS.Add(s.LabSampleIdentifier);
                         }
-                        if (!r.hasAnalysisStartDate)
-                        {
-                            s.AddError("Required field for Sample Result " + r.AnalyteCode + " Analysis start date is missing", true);
-                            rejectSamplesSS.Add(s.LabSampleIdentifier);
-                        }
-                        if (!r.hasAnalysisStartTime)
-                        {
-                            s.AddError("Required field for Sample Result " + r.AnalyteCode + " Analysis start time is missing", true);
-                            rejectSamplesSS.Add(s.LabSampleIdentifier);
-                        }
+                        //if (!r.hasAnalysisStartDate)
+                        //{
+                        //    s.AddError("Required field for Sample Result " + r.AnalyteCode + " Analysis start date is missing", true);
+                        //    rejectSamplesSS.Add(s.LabSampleIdentifier);
+                        //}
+                        //if (!r.hasAnalysisStartTime)
+                        //{
+                        //    s.AddError("Required field for Sample Result " + r.AnalyteCode + " Analysis start time is missing", true);
+                        //    rejectSamplesSS.Add(s.LabSampleIdentifier);
+                        //}
                         /*if (!r.hasAnalysisEndDate)
                         {
                             r.AddError("Required field: Analysis end date is missing", true);
@@ -284,21 +286,22 @@ namespace MigrateValidateDseData
                                     rejectSamplesSS.Add(s.LabSampleIdentifier);
                                 }
                             }
-
-                            if (!r.IsPfosPfoa() && !string.IsNullOrWhiteSpace(r.MethodIdentifier) && !IsLabCertifiedForMethod(r.LabAccredidationIdentifier, r.MethodIdentifier, r.AnalyteCode, resultLabAnalysis))
+                            //RD: Modified  the code to relax for 40201 lab and SCRAD.
+                            if (!r.IsPfosPfoa() && !IsLabSCRADOrDHEC(r.LabAccredidationIdentifier) &&  !string.IsNullOrWhiteSpace(r.MethodIdentifier) && !IsLabCertifiedForMethod(r.LabAccredidationIdentifier, r.MethodIdentifier, r.AnalyteCode, resultLabAnalysis))
                             {
                                 s.AddError("Lab is not certified for this method (" + r.MethodIdentifier + ") and analyte (" + r.AnalyteCode + ") for the given analysis date", true);
                                 rejectSamplesSS.Add(s.LabSampleIdentifier);
                             }
                         }
-                        else if (!r.IsPfosPfoa() && !string.IsNullOrWhiteSpace(r.MethodIdentifier) && !IsLabCertifiedForMethod(r.LabAccredidationIdentifier, r.MethodIdentifier, r.AnalyteCode))
+                        //RD: Modified the code to relax for 40201 lab and SCRAD.
+                        else if (!r.IsPfosPfoa() &&  !IsLabSCRADOrDHEC(r.LabAccredidationIdentifier) && !string.IsNullOrWhiteSpace(r.MethodIdentifier) && !IsLabCertifiedForMethod(r.LabAccredidationIdentifier, r.MethodIdentifier, r.AnalyteCode))
                         {
                             s.AddError("Lab is not certified for this method (" + r.MethodIdentifier + ") and analyte (" + r.AnalyteCode + ").", true);
                             rejectSamplesSS.Add(s.LabSampleIdentifier);
                         }
                         r.SetDataValidation();
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Mailer m = new Mailer();
                         m.SendErrorMessage("An error ocurred while validating the following result:\r\n" + r.ToString(), e, "Exception in MigrateValidateDseData");
@@ -310,7 +313,7 @@ namespace MigrateValidateDseData
                     {
                         DbHelper.AddResult(r);
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Mailer m = new Mailer();
                         m.SendErrorMessage("An error occurred while saving the following result to the database:\r\n" + r.ToString(), e, "Exception in MigrateValidateDseData");
@@ -344,7 +347,7 @@ namespace MigrateValidateDseData
                     }
                     s.SetDataValidation();
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     Mailer m = new Mailer();
                     m.SendErrorMessage("An error ocurred while validating the following sample:\r\n" + s.ToString(), e, "Exception in MigrateValidateDseData");
@@ -370,7 +373,7 @@ namespace MigrateValidateDseData
                 }
             }
             StringBuilder rejected = new StringBuilder();
-            foreach(string s in rejectSamplesSS)
+            foreach (string s in rejectSamplesSS)
             {
                 rejected.Append(s + "\r\n");
             }
@@ -382,7 +385,10 @@ namespace MigrateValidateDseData
             rejectSamples = rejected.ToString();
             acceptedSamples = accepted.ToString();
         }
-
+        private static bool IsLabSCRADOrDHEC(string LabStateId)
+        {
+            return LabStateId == "40201" || LabStateId == "SCRAD";
+        }
         private static bool IsLabCertifiedForMethod(string LabStateId, string MethodCode, string AnalyteCode)
         {
             return IsLabCertifiedForMethod(LabStateId, MethodCode, AnalyteCode, DateTime.Now);

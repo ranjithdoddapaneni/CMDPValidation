@@ -70,8 +70,7 @@ namespace ValidationUtilities.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("WE HAVE A DEDICATED INBOX FOR CMDP CORRESPONDENCE THAT GETS COPIES OF EMAIL SENT " +
-            "TO LABS")]
+        [global::System.Configuration.DefaultSettingValueAttribute("sdwis@dhec.sc.gov")]
         public string cmdpEmail {
             get {
                 return ((string)(this["cmdpEmail"]));
