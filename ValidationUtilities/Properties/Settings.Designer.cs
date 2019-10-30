@@ -99,7 +99,7 @@ namespace ValidationUtilities.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>doddaprk@dhec.sc.gov</string>\r\n</ArrayOfString>")]
+            "tring>sdwis@dhec.sc.gov</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection errorReportEmailList {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["errorReportEmailList"]));
@@ -110,7 +110,7 @@ namespace ValidationUtilities.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>doddaprk@dhec.sc.gov</string>\r\n</ArrayOfString>")]
+            "tring>fullerma@dhec.sc.gov</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection adminEmails {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["adminEmails"]));
