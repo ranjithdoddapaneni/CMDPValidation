@@ -51,5 +51,15 @@ namespace MigrateLIMSData.Properties {
                 return ((string)(this["OutputPath"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LIMS.DHEC.SC.GOV;Initial Catalog=LIMSR;Integrated Security=True")]
+        public string LIMSRConnectionString {
+            get {
+                return ((string)(this["LIMSRConnectionString"]));
+            }
+        }
     }
 }

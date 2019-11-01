@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="logfile" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">.\\cmdpMigrateValidateLog.txt</Value>
+      <Value Profile="(Default)">C:\cmdpMigrateValidateLog.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -6,7 +6,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="UserDomain" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">DEC</Value>
+      <Value Profile="(Default)">DHEC</Value>
     </Setting>
     <Setting Name="SdwisAddOnConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;

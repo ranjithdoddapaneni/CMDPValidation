@@ -31,6 +31,7 @@ namespace MigrateLIMSData
            "</EN:eDWR>";
         public static void Main(string[] args)
         {
+            //ProcessRADSamples.ProcessRADSampleJob();
             SAMPLETableAdapter SAMPLE = new SAMPLETableAdapter();
             lims = new LIMSDB();
             SAMPLE.Fill(lims.SAMPLE);
@@ -42,12 +43,12 @@ namespace MigrateLIMSData
             StringBuilder resultCollection = new StringBuilder();
 
             foreach (SAMPLERow v in lims.SAMPLE.Rows)
-            {               
-                    sample = new LIMSSample(v,i);
-                    sampleCollection.Append(sample.FetchSampleXML());
-                    ProcessSample(v, resultCollection);               
+            {
+                sample = new LIMSSample(v, i);
+                sampleCollection.Append(sample.FetchSampleXML());
+                ProcessSample(v, resultCollection);
             }
-            var str = string.Format(xmlDocFormat, "40201", "STATE", sampleCollection.ToString(),resultCollection.ToString());
+            var str = string.Format(xmlDocFormat, "40201", "STATE", sampleCollection.ToString(), resultCollection.ToString());
             File.WriteAllText(path, str);
         }
         public static void ProcessSample(SAMPLERow row,StringBuilder resultCollection)

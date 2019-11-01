@@ -34,7 +34,7 @@ namespace ValidationDataAccess.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("DEC")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DHEC")]
         public string UserDomain {
             get {
                 return ((string)(this["UserDomain"]));
