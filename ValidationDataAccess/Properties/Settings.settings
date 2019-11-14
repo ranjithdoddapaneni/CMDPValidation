@@ -19,10 +19,10 @@
     <Setting Name="SdwisAddOnProd" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password=DSE_MATRIX@2019!&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQL.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password="]Wv_9tjTtR7;}H9~"&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password=DSE_MATRIX@2019!</Value>
+      <Value Profile="(Default)">Data Source=GENSQL.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Password="]Wv_9tjTtR7;}H9~"</Value>
     </Setting>
     <Setting Name="SdwisDbConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
@@ -35,10 +35,10 @@
     <Setting Name="SdwisDbProd" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;User ID=sdwis_user;Password=9Ln3c@nlza&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=GENSQL.DHEC.SC.GOV;Initial Catalog=SDWIS;Persist Security Info=True;User ID=SDWIS;Password=SDWIS2SC&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Info=True;User ID=sdwis_user;Password=9Ln3c@nlza</Value>
+      <Value Profile="(Default)">Data Source=GENSQL.DHEC.SC.GOV;Initial Catalog=SDWIS;Persist Security Info=True;User ID=SDWIS;Password=SDWIS2SC</Value>
     </Setting>
   </Settings>
 </SettingsFile>

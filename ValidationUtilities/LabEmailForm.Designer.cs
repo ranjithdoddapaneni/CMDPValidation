@@ -46,7 +46,7 @@
             this.EmailFrom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailFrom.Location = new System.Drawing.Point(85, 15);
-            this.EmailFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailFrom.Margin = new System.Windows.Forms.Padding(4);
             this.EmailFrom.Name = "EmailFrom";
             this.EmailFrom.Size = new System.Drawing.Size(476, 22);
             this.EmailFrom.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.EmailTo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailTo.Location = new System.Drawing.Point(85, 48);
-            this.EmailTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailTo.Margin = new System.Windows.Forms.Padding(4);
             this.EmailTo.Name = "EmailTo";
             this.EmailTo.Size = new System.Drawing.Size(476, 22);
             this.EmailTo.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.EmailCc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailCc.Location = new System.Drawing.Point(85, 81);
-            this.EmailCc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailCc.Margin = new System.Windows.Forms.Padding(4);
             this.EmailCc.Name = "EmailCc";
             this.EmailCc.Size = new System.Drawing.Size(476, 22);
             this.EmailCc.TabIndex = 2;
@@ -76,7 +76,7 @@
             this.EmailSubject.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailSubject.Location = new System.Drawing.Point(85, 114);
-            this.EmailSubject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailSubject.Margin = new System.Windows.Forms.Padding(4);
             this.EmailSubject.Name = "EmailSubject";
             this.EmailSubject.Size = new System.Drawing.Size(476, 22);
             this.EmailSubject.TabIndex = 3;
@@ -125,7 +125,7 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.Location = new System.Drawing.Point(463, 283);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 9;
@@ -137,7 +137,7 @@
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSend.Location = new System.Drawing.Point(355, 283);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(100, 28);
             this.btnSend.TabIndex = 10;
@@ -151,7 +151,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailBody.Location = new System.Drawing.Point(20, 146);
-            this.EmailBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailBody.Margin = new System.Windows.Forms.Padding(4);
             this.EmailBody.Multiline = true;
             this.EmailBody.Name = "EmailBody";
             this.EmailBody.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -175,9 +175,10 @@
             this.Controls.Add(this.EmailCc);
             this.Controls.Add(this.EmailTo);
             this.Controls.Add(this.EmailFrom);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LabEmailForm";
             this.Text = "Lab Email Form";
+            this.Load += new System.EventHandler(this.LabEmailForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

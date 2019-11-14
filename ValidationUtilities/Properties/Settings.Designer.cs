@@ -61,7 +61,7 @@ namespace ValidationUtilities.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(".\\\\cmdpValidationUtilitiesLog.txt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\cmdpValidationUtilitiesLog.txt")]
         public string logfile {
             get {
                 return ((string)(this["logfile"]));

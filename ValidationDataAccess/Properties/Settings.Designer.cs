@@ -55,8 +55,8 @@ namespace ValidationDataAccess.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;" +
-            "Password=DSE_MATRIX@2019!")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQL.DHEC.SC.GOV;Initial Catalog=SDWISAddOn;User ID=DSE_MATRIX;Pass" +
+            "word=\"]Wv_9tjTtR7;}H9~\"")]
         public string SdwisAddOnProd {
             get {
                 return ((string)(this["SdwisAddOnProd"]));
@@ -77,8 +77,8 @@ namespace ValidationDataAccess.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQLTEST.DHEC.SC.GOV;Initial Catalog=SDWISTEST;Persist Security Inf" +
-            "o=True;User ID=sdwis_user;Password=9Ln3c@nlza")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=GENSQL.DHEC.SC.GOV;Initial Catalog=SDWIS;Persist Security Info=True;U" +
+            "ser ID=SDWIS;Password=SDWIS2SC")]
         public string SdwisDbProd {
             get {
                 return ((string)(this["SdwisDbProd"]));

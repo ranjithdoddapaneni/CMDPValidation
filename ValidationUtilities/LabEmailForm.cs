@@ -72,5 +72,10 @@ namespace ValidationUtilities
         {
 
         }
+
+        private void LabEmailForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

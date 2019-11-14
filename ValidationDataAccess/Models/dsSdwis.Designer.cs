@@ -3380,7 +3380,7 @@ and c.ELECTRONIC_ADDRESS is not null";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "select EMAIL\r\nfrom USERINFO\r\nwhere DECUsername = @username";
+            this._commandCollection[0].CommandText = "select EMAIL\r\nfrom USERINFO\r\nwhere SCUsername = @username";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "DECUsername", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
